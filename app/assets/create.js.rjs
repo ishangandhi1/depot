@@ -1,0 +1,5 @@
+page.replace_html('cart',render(@cart))
+
+page[:cart].visual_effect :blind_down if @cart.total_items==1
+
+page[:current_item].visual_effect :highlight, :startcolor=>"#A9A9A9", :endcolor=>"#878787"

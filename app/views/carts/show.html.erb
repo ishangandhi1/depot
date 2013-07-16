@@ -1,0 +1,5 @@
+<% if @cart %>
+<%= render 'cart'%>
+    <% else %>
+    <%= redirect_to store_url, :notice=> "no cart available" %>
+<% end %>
